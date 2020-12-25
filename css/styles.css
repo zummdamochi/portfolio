@@ -1,0 +1,198 @@
+body{
+  color:#333;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  width:100%;
+  height:100%;
+  background:rgb(216, 216, 216);
+}
+
+.select{
+  width:100%;
+  height:35px;
+  font-size:15px;
+  position:fixed;
+  display:flex;
+  z-index: 3;
+  top:0px;
+  background:rgb(255,255,255,0.9);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select h1{
+  margin:0 20px 5px;
+  font-size:18px;
+}
+
+.select h1 a:hover{
+  opacity:0.5;
+}
+
+.select a{
+  text-decoration: none;
+  color:#333;
+}
+
+.select nav{
+  display:none;
+}
+
+header{
+  width:100%;
+}
+
+.title{
+  width: 100%;
+}
+
+.title h1{
+  font-size:25px;
+  text-align:center;
+  margin-top:100px;
+  margin-bottom:0px;
+}
+
+span{
+  border-bottom:3px solid #333;
+  width:60px;
+  display:block;
+  text-align:center;
+  margin:10px auto 20px;
+}
+
+.title p{
+  text-align:center;
+  margin:5px auto;
+  color:#777;
+  font-size:12px;
+  width:80%;
+}
+
+hr{
+  opacity: 0;
+}
+
+content{
+  margin:100px auto;
+  width:95%;
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit ,minmax(250px , 2fr));
+  grid-template-rows: 180px;
+  gap:10px;
+  justify-content: center;
+  justify-items:center;
+  align-items: center;
+}
+
+.art{
+  width:250px;
+  height:180px;
+  margin:20px;
+}
+
+.art p{
+  text-align:center;
+  font-size:10px;
+  font-weight: bold;
+  margin-top:3px;
+}
+
+.art a{
+  color:#333;
+  text-decoration: none;
+
+  transition-property:transform;
+  transition-duration:5s;
+}
+
+.art img:hover{
+  opacity:0.8;
+  transform:scale(.95 , .95)
+}
+
+img{
+  width:250px;
+  height:150px;
+}
+
+.name {
+  width:120px;
+  margin:auto;
+  color:gray;
+  font-size:13px;
+  text-align:center;
+  padding-top:30px;
+  margin-top:300px;
+}
+
+@media(min-width:800px){
+  .title h1{
+    font-size:36px;
+  }
+
+  .title p{
+    font-size:16px;
+  }
+
+
+  header .select{
+    height:65px;
+  }
+
+  .select h1{
+    margin:0 20px 10px;
+    font-size:36px;
+  }
+  
+  .select nav{
+    display:inline;
+  }
+  
+  nav a:hover{
+    border-bottom:1px #333 solid;
+  }
+
+  nav a{
+    margin-right:20px;
+    text-decoration: none;
+    padding-bottom:3px;
+    color:#333;
+    align-items: center;
+  }
+  
+  .title{
+    color:#333;
+    margin:80px auto 10px auto;
+    font-weight:1.5;
+    font-size:15px;
+    height: 85px;
+    width:800px;
+  }
+
+  content{
+ 
+    display:grid;
+    grid-template-columns: repeat(auto-fit ,minmax(400px , 2fr));
+    grid-template-rows: 300px;
+  }
+  
+  .art{
+    width:400px;
+    height:300px;
+  }
+  
+  .art p{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  img{
+    width:400px;
+    height:240px;
+  }
+
+
+
+  }
