@@ -74,7 +74,7 @@ hr{
 }
 
 content{
-  margin:100px auto;
+  margin:50px auto;
   width:95%;
 
   display:grid;
@@ -92,24 +92,33 @@ content{
   margin:20px;
 }
 
-.art p{
+.art > h1{
   text-align:center;
   font-size:10px;
   font-weight: bold;
   margin-top:3px;
+  margin-bottom: 0;
+}
+
+.art > p{
+  font-size:10px;
+  margin:0;
+  text-align:center;
 }
 
 .art a{
   color:#333;
   text-decoration: none;
+}
 
+.art img{
   transition-property:transform;
-  transition-duration:5s;
+  transition-duration:1s;
 }
 
 .art img:hover{
   opacity:0.8;
-  transform:scale(.95 , .95)
+  transform:scale(.95 , .95);
 }
 
 img{
@@ -172,7 +181,8 @@ img{
   }
 
   content{
- 
+    margin:100px auto;
+
     display:grid;
     grid-template-columns: repeat(auto-fit ,minmax(400px , 2fr));
     grid-template-rows: 300px;
@@ -183,9 +193,13 @@ img{
     height:300px;
   }
   
-  .art p{
+  .art h1{
     font-size:16px;
     font-weight: bold;
+  }
+
+  .art p{
+    font-size:12px;
   }
 
   img{
