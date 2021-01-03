@@ -61,14 +61,6 @@ span{
   margin:10px auto 20px;
 }
 
-.title p{
-  text-align:center;
-  margin:5px auto;
-  color:#777;
-  font-size:12px;
-  width:80%;
-}
-
 hr{
   opacity: 0;
 }
@@ -140,11 +132,6 @@ img{
   .title h1{
     font-size:36px;
   }
-
-  .title p{
-    font-size:16px;
-  }
-
 
   header .select{
     height:65px;
