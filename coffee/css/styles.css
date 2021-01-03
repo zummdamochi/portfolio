@@ -1,8 +1,9 @@
 body{
-  margin:0;
-  /* border:solid 20px rgb(90, 10, 10); */
+  margin:auto;
   font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, "Yu Gothic", YuGothic, "MS PGothic", Osaka, arial, sans-serif;;
   background:rgb(90, 10, 10);
+  width:100%;
+  height:100%;
 }
 
 header{
@@ -15,11 +16,11 @@ header{
 
 header > span{
   border-bottom:3px solid rgb(90, 10, 10);
-  width:500px;
+  width:300px;
   display:block;
   margin:20px auto;
   text-align:center;
-  font-size:40px;
+  font-size:25px;
   font-weight: bold;
   font-family:fantasy;
 }
@@ -29,25 +30,27 @@ header > span{
   margin:30px auto 10px;
   display:flex;
   align-content:center;
+  justify-content: center;
   color:rgb(90, 10, 10);
 }
 
 .main img{
-  width:30%;
-  height:30%;
-  margin:20px;
+  width:100px;
+  height:100px;
+  margin:0;
+  padding-top: 40px;
 }
 
 .sub{
-  margin-left:30px;
-  width:60%;
+  width:50%;
+  margin-left:20px;
 }
 
 .sub h2{
-  margin:20px 5px ;
+  margin:20px 5px 5px;
   align-self: center;
   font-weight: bold;
-  font-size:25px;
+  font-size:18px;
   padding-top:10px;
   color:#000
 }
@@ -58,6 +61,7 @@ header > span{
   align-self: center;
   font-size:15px;
   color:#999;
+  line-height: 1.2;
 }
 
 .intro{
@@ -223,6 +227,10 @@ a:hover{
     width:100%;
   }
 
+  header > span{
+    font-size:40px;
+  }
+
   .main{
     width:600px;
   }
@@ -230,6 +238,12 @@ a:hover{
   .main img{
     width:250px;
     height:250px;
+    margin:20px;
+    padding-top: 20px;
+  }
+
+  .sub{
+    margin-left:30px;
   }
 
   .sub h2{
@@ -244,6 +258,10 @@ a:hover{
     align-self: center;
     font-weight: bold;
     font-size:25px;
+  }
+
+  .intro{
+    font-size:15px;
   }
 
   .container li{
